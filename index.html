@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>404 not found</title>
+        <script>
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+
+            function jumpscare() {
+                console.log('💀')
+                var audio = new Audio('audio_file.mp3');
+                audio.play();
+            }
+            alert("Jumpscares may be ahead!\nPress OK to continue");
+            sleep(3000).then(() => { jumpscare(); });
+
+        </script>
+    </head>
+    <body>
+        <h1>404 not found</h1>
+        <p>The requested URL was not found on this server.</p>
+        <a href="https://manor.hackclub.com/">Go home.</a>
+    </body>
+</html>
