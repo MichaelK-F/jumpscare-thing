@@ -208,7 +208,7 @@
                 <img src="j.png" hight=100%>
                 `;
                 document.body.appendChild(jumpscare);
-                sleep(3000).then(() => { window.location.replace("https://manor.hackclub.com/manor.html"); });
+                sleep(3000).then(() => { window.location.replace("https://hack.club/boba-manor"); });
                 
             }
 
@@ -220,12 +220,11 @@
                     <div id="error">
                         <h1>404 Not Found</h1>
                         <p>The requested URL was not found on this server.</p>
-                        <a href="https://manor.hackclub.com/">Go home.</a>
                     </div>
                 `;
                 document.body.appendChild(errorContainer);
                 document.title = "404 not found";
-                sleep(3000).then(() => { jumpscare(); });
+                sleep(2100).then(() => { jumpscare(); });
             }
 
         </script>
